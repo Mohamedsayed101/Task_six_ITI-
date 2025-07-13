@@ -1,0 +1,100 @@
+<!-- made by Mohamed Sayed Omar -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A simple HTML and CSS template">
+    <meta name="keywords" content="HTML, CSS, template">
+    <meta name="author" content="Mohamed Sayed Omar El-sayed">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="robots" content="index, follow">
+
+
+    <link rel="icon" href="./Images/laptop.jpeg" type="image/x-icon">    
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Simple Website</title>
+</head>
+<body>
+   <div class="container">
+    <div class="nav-bar">
+        <div class="logo">
+            <a href="./index.html"><h1>MO.SAYED</h1></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="about box" id="about">
+        <h2>About Me</h2>
+        <h4>Mohamed Sayed</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div class="services box" id="services">
+        <h2>My Services</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Graphic Design</li>
+            <li>SEO Optimization</li>
+            <li>Content Creation</li>
+            <li>Social Media Management</li>
+            <li>Consulting</li>
+            <li>Training and Workshops</li>
+        </ul>
+    </div>
+
+    <div class="contact box" id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div>
+                <label for="Brith-Day">Brith Day:</label>
+                <input type="date" id="Brith-Day" name="Brith-Day" required>
+            </div>
+            
+            <div>
+            <label for="postion">Select Your Postion:</label>
+            <select id="postion" name="postion" required>
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+                <option value="manager">Manager</option>
+                <option value="analyst">Analyst</option>
+                <option value="other">Other</option>
+            </select>
+            </div>
+
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter Your Message"  required></textarea>
+            </div>
+            
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 <span>MO.SAYED.</span> All rights reserved.</p>    
+   </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+This project is made by Engineer Mohamed Sayed Omar 
+and he has full copyright and printing rights, etc.
+Also, this file was made without using Ai. 
+Ai’s role was limited to reviewing and 
+evaluating the code and suggesting improvements. 
+I would like to point out that 
+this is the first time I have written a read me file
+myself from A to Z.

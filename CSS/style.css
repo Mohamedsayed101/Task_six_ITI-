@@ -1,0 +1,268 @@
+
+/* made by Mohamed Sayed Omar */
+
+/* Start Main Variables */
+
+:root {
+    --main-color: #8b82df;
+    --secondary-color: #6a1c6b;
+    --third-color: #9c7eb5;
+    --last-color:#87a8e8;
+    --fav-color: #dd3344;
+    --anthor-color: #19185d;
+    --text-color: #fff;
+    --highlight-color: #1f6bde;
+}
+
+/* End Main Variables */
+
+/* Start Golbal Elements */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color, #fff);
+}
+
+h2 {
+    color: var(--highlight-color);
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.box {
+    max-width: 700px;
+    width: 90%;
+    margin: 200px 10px 0px;
+    padding: 30px;
+    opacity: 0.7;
+}
+
+/* End Golbal Elements */
+
+/* Start Container */
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("../Images/car-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* End Container */
+
+/* Start nav bar */
+
+.nav-bar {
+    background-color: var(--main-color, #8b82df);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 10px 20px;
+    margin: 0px 0px 100px ;
+    z-index: 1000;
+}
+
+.nav-bar .logo {
+    padding: 5px 10px;
+    background-color: var(--highlight-color);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.nav-bar .logo:hover {
+    background-color: var(--secondary-color);
+}
+
+.nav-bar .logo h1 {
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.nav-bar .logo h1::first-letter {
+    color: #712363;
+}
+
+.nav-bar .logo:hover h1::first-letter {
+    color: green;
+}
+
+.nav-bar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-bar .nav-links li {
+    margin: 0 15px;
+}
+
+.nav-bar .nav-links li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.nav-bar .nav-links li a:hover {
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+/* End nav bar */
+
+/* Start About Section */
+
+.about {
+    color: var(--text-color);
+    background-color: #712363;
+}
+
+.about h4 {
+    color: var(--fav-color);
+    margin-bottom: 10px;
+}
+
+.about p {
+    line-height: 1.6;
+}
+
+/* End About Section */
+
+/* Start Services */
+
+.services {
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+.services h2 {
+    color: var(--anthor-color);
+
+}
+
+.services ul {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.services ul li::before {
+    content: ""; 
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border: 5px solid var(--fav-color);
+    margin-right: 10px;
+}
+
+/* End Services */
+
+.contact {
+    opacity: 1;
+}
+
+form {
+    border: 1px solid var(--fav-color);
+    padding: 10px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;     
+}
+
+form div {
+    margin: 10px;
+}
+
+form input,
+textarea {
+    outline: none;
+    border: 1px solid var(--highlight-color);
+    padding: 5px;
+}
+
+form label {
+    color: var(--fav-color);
+    font-weight: bold;
+}
+
+form div:last-of-type {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+form button {
+    min-width: 120px;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 8px;
+    outline: none;
+    align-self: center;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bold;
+    background-color: var(--last-color);
+    color: var(--secondary-color);
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: var(--fav-color);
+    box-shadow: 0 0 5px var(--fav-color);
+}
+
+form button:hover {
+    background-color:var(--main-color);
+    color: var(--fav-color);
+}
+
+/* End Services */
+
+/* Start Footer */
+
+.footer {
+    margin-top: 100px;
+    padding: 10px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.footer span {
+    color: var(--anthor-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+/* End Footer */
+
+/* Start Responsive */
+
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+  }
+
+  .nav-bar .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar .nav-links li {
+    margin: 10px 0;
+  }
+}
+
+/* End Responsive */
